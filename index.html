@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra Character Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-page">
+    <h1>Welcome to the Terra Party member quiz!</h1>
+    <p>Discover which Terra Party member matches your survival instincts!</p>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+  
+  <div id="quiz-box" class="hidden">
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+    
+    <div id="story"></div>
+    <div id="choices"></div>
+    <button id="next-btn" disabled>Next</button>
+  </div>
+
+  <div id="result-box" class="hidden">
+    <h2 id="result-name"></h2>
+    <img id="result-image" src="" alt="Your character" />
+    <p id="result-description"></p>
+    <button id="retry-btn">Retry Quiz</button>
+    <button id="share-btn">Share Results</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</body>
+</html>
